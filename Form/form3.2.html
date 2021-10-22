@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: burlywood;">
+    <br>
+    <fieldset style="background-color: chocolate;" >
+        <table  width="100%">
+            <tbody>
+                <tr>
+                    <td width="15%" >Home &nbsp;  </td>
+                    <td width="15%">Generate Link</td>
+                    <td width="15%">Transaction History</td>
+                    <td width="15%">Policy</td>
+                    <td width="15%">Logout</td>
+            </tbody>
+        </table>
+    </fieldset>
+    <br>
+    <br>
+        <table>
+            <tbody>
+                <tr>
+                    <td><form action="/client.php" method="post" enctype="multipart/form-data">
+                        <img width="300px" src="image/sate.jpg"> <br> <label>Upload Picture<input type="file" name="photo"></label></form></td>
+                    <td>Title Here :</td> 
+                    <td><input type="text" name="title"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Description :</td>
+                    <td><textarea placeholder="Tidak lebih dari 300 karakter" maxlength="300" id="instructions" name="instructions" cols="47,5" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Account Number :</td>
+                    <td><input type="text" name="number"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Bank :</td>
+                    <td><input type="text" list="bank" placeholder="Pilih Menu Bank "><datalist id="bank">
+                        <option value="BRI"></option>
+                        <option value="Mandiri"></option>
+                        <option value="BCA"></option>
+                        <option value="Mega"></option>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Account Holder</td>
+                    <td><input type="text" name="holder"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Transaction :</td>
+                    <td><input type="number" name="transaksi" min="1" max="3"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><p>*jika transaksi untuk 3 orang, pilih 3 dari list diatas</p> 
+                        <input type="checkbox" id="phone" name="phone" value="phone" style="color: #0a0a0a;">
+                        <label for="phone" style="color: #000000;"><strong>Send to Mobile Phone</strong> </label> <br>
+                        <input type="checkbox" id="email" name="email" value="email" style="color: #000000;">
+                        <label for="email" style="color: #070707;"><strong>Send to Email</strong> </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Send to Mobile Phone :</td>
+                    <td><input type="text" name="pohone"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Send to Email</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="submit" value="submit" style="color: rgb(0, 0, 0);" placeholder="Generate Link"></td>
+                </tr>
+            </tbody>
+        </table>
+                
+</body>
+</html>
